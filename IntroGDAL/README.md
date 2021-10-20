@@ -100,26 +100,26 @@ Tüm GDAL, hata raporlama için CPLError() kullanır.
 
 ## Formatlar Hakkında Bilgiler
 
-GTiff – GeoTIFF Dosya Formatı:  <br>
+### GTiff – GeoTIFF Dosya Formatı:  <br>
 Görüntüdeki her pikseli Dünya yüzeyinde yerleştirmek için gerekli bilgileri depolayan özel bir TIFF türü.
 
-JP2OpenJPEG – OpenJPEG kitaplığına dayalı JPEG2000 sürücüsü: <br>
+### JP2OpenJPEG – OpenJPEG kitaplığına dayalı JPEG2000 sürücüsü: <br>
 Bu sürücü, OpenJPEG kitaplığı v2'ye dayalı bir JPEG2000 okuyucu/yazıcı uygulamasıdır . JPEG 2000, dalgacık teknolojisine dayalı son teknoloji sıkıştırma tekniklerini kullanan ve son derece yüksek düzeyde ölçeklenebilirlik ve erişilebilirlik sunan bir görüntü kodlama sistemidir. 
 
-NITF – National Imagery Transmission Format:<br>
+### NITF – National Imagery Transmission Format:<br>
 
-PCIDSK – PCI Geomatics Database File:<br>
+### PCIDSK – PCI Geomatics Database File:<br>
 Görüntü analizi için PCI EASI/PACE yazılımı tarafından kullanılan PCIDSK veritabanı dosyasıdır.
 
 
-HFA – Erdas Imagine .img:<br>
+### HFA – Erdas Imagine .img:<br>
 GDAL, okuma erişimi ve yazma için Erdas Imagine .img formatını destekler.
 
-PNG – Portable Network Graphics:<br>
+### PNG – Portable Network Graphics:<br>
 GDAL, .png dosyalarını okuma ve oluşturma desteği içerir. PNG dosyaları, CreateCopy() yöntemi kullanılarak bir tür PNG ile oluşturulabilir .
 XMP meta verileri dosyadan çıkarılabilir ve xml:XMP meta veri etki alanında XML ham içeriği olarak depolanır.
 
-ECW – Enhanced Compressed Wavelets (.ecw): <br>
+### ECW – Enhanced Compressed Wavelets (.ecw): <br>
 GDAL, Hexagon Geospatial (eski adıyla Intergraph, ERDAS, ERMapper) tarafından geliştirilen ERDAS ECW/JP2 SDK kullanılarak ECW dosyalarının okunmasını ve yazılmasını destekler. Destek isteğe bağlıdır ve ECW/JP2 SDK İndirme sayfasında bulunan kitaplıklarda bağlantı kurulmasını gerektirir.<br>
 ERDAS ECW/JP2 SDK v5.x, birden çok lisans türü altında mevcuttur. Masaüstü kullanımı için, herhangi bir boyuttaki ECW/JP2 görüntüsünün kodunun çözülmesi ücretsiz olarak sağlanır.
 ERDAS ECW/JP2 v4.x ve v5.x SDK yalnızca görüntü açma için ücretsizdir. Görüntüleri sıkıştırmak için okuma/yazma SDK'sı ile derlemek ve çalışma zamanında ERDAS'tan satın alınabilecek bir OEM lisans anahtarı sağlamak gerekir.<br>
