@@ -100,9 +100,37 @@ Tüm GDAL, hata raporlama için CPLError() kullanır.
 
 ## Formatlar Hakkında Bilgiler
 
-GTiff/GeoTIFF : görüntüdeki her pikseli Dünya yüzeyinde yerleştirmek için gerekli bilgileri depolayan özel bir TIFF türü.
+GTiff – GeoTIFF Dosya Formatı:  <br>
+Görüntüdeki her pikseli Dünya yüzeyinde yerleştirmek için gerekli bilgileri depolayan özel bir TIFF türü.
+
+JP2OpenJPEG – OpenJPEG kitaplığına dayalı JPEG2000 sürücüsü: <br>
+Bu sürücü, OpenJPEG kitaplığı v2'ye dayalı bir JPEG2000 okuyucu/yazıcı uygulamasıdır . JPEG 2000, dalgacık teknolojisine dayalı son teknoloji sıkıştırma tekniklerini kullanan ve son derece yüksek düzeyde ölçeklenebilirlik ve erişilebilirlik sunan bir görüntü kodlama sistemidir. 
+
+NITF – National Imagery Transmission Format:<br>
+
+PCIDSK – PCI Geomatics Database File:<br>
+Görüntü analizi için PCI EASI/PACE yazılımı tarafından kullanılan PCIDSK veritabanı dosyasıdır.
 
 
+HFA – Erdas Imagine .img:<br>
+GDAL, okuma erişimi ve yazma için Erdas Imagine .img formatını destekler.
+
+PNG – Portable Network Graphics:<br>
+GDAL, .png dosyalarını okuma ve oluşturma desteği içerir. PNG dosyaları, CreateCopy() yöntemi kullanılarak bir tür PNG ile oluşturulabilir .
+XMP meta verileri dosyadan çıkarılabilir ve xml:XMP meta veri etki alanında XML ham içeriği olarak depolanır.
+
+ECW – Enhanced Compressed Wavelets (.ecw): <br>
+GDAL, Hexagon Geospatial (eski adıyla Intergraph, ERDAS, ERMapper) tarafından geliştirilen ERDAS ECW/JP2 SDK kullanılarak ECW dosyalarının okunmasını ve yazılmasını destekler. Destek isteğe bağlıdır ve ECW/JP2 SDK İndirme sayfasında bulunan kitaplıklarda bağlantı kurulmasını gerektirir.<br>
+ERDAS ECW/JP2 SDK v5.x, birden çok lisans türü altında mevcuttur. Masaüstü kullanımı için, herhangi bir boyuttaki ECW/JP2 görüntüsünün kodunun çözülmesi ücretsiz olarak sağlanır.
+ERDAS ECW/JP2 v4.x ve v5.x SDK yalnızca görüntü açma için ücretsizdir. Görüntüleri sıkıştırmak için okuma/yazma SDK'sı ile derlemek ve çalışma zamanında ERDAS'tan satın alınabilecek bir OEM lisans anahtarı sağlamak gerekir.<br>
+Hala ECW 3.3 SDK kullananlar için, 500 MB'tan küçük resimler ücretsiz olarak sıkıştırılabilirken, daha büyük resimler ERDAS'tan lisans alınmasını gerektirir. 
+
+ECW formatında sıkıştırılacak dosyalar da en az 128x128 olmalıdır. ECW şu anda ECW Sürüm 2 dosyaları için kanal başına yalnızca 8 biti desteklemektedir. ECW Sürüm 3 dosyaları, kanal başına 16 biti destekler (Uint16 veri türü olarak).
+
+
+<!--
+JPEG_QUALITY=[1-100] : JPEG sıkıştırmasını kullanırken JPEG kalitesini ayarlayın. 100 değeri en iyi kalitedir (en az sıkıştırma), 1 ise en kötü kalitedir (en iyi sıkıştırma). Varsayılan 75'tir.
+-->
 
 
 ## Kaynaklar
@@ -111,3 +139,4 @@ GTiff/GeoTIFF : görüntüdeki her pikseli Dünya yüzeyinde yerleştirmek için
 * [GDAL Data Model](http://pkg.cs.ovgu.de/LNF/i386/5.10/LNFgdal-docs/reloc/gdal/html/gdal_datamodel.html)
 * [GDAL Dataset Class Refence](http://pkg.cs.ovgu.de/LNF/i386/5.10/LNFgdal-docs/reloc/gdal/html/classGDALDataset.html#_details)
 * [OGR Projections Tutorial](http://pkg.cs.ovgu.de/LNF/i386/5.10/LNFgdal-docs/reloc/gdal/html/ogr/osr_tutorial.html)
+* [PCIDSK Tutorial](https://web.archive.org/web/20130810131727/http://home.gdal.org/projects/pcidsk/tutorial.html)
