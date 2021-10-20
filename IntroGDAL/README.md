@@ -140,3 +140,4 @@ JPEG_QUALITY=[1-100] : JPEG sıkıştırmasını kullanırken JPEG kalitesini ay
 * [GDAL Dataset Class Refence](http://pkg.cs.ovgu.de/LNF/i386/5.10/LNFgdal-docs/reloc/gdal/html/classGDALDataset.html#_details)
 * [OGR Projections Tutorial](http://pkg.cs.ovgu.de/LNF/i386/5.10/LNFgdal-docs/reloc/gdal/html/ogr/osr_tutorial.html)
 * [PCIDSK Tutorial](https://web.archive.org/web/20130810131727/http://home.gdal.org/projects/pcidsk/tutorial.html)
+* [Examples](https://cpp.hotexamples.com/examples/-/-/CSLSetNameValue/cpp-cslsetnamevalue-function-examples.html)
